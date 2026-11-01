@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Un día de la tira de la agenda. Colores: drawable/bg_dia.xml y color/texto_dia.xml. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/espacio_chico"
+    android:background="@drawable/bg_dia"
+    android:clickable="true"
+    android:focusable="true"
+    android:minWidth="64dp"
+    android:paddingHorizontal="14dp"
+    android:paddingVertical="10dp"
+    android:gravity="center"
+    android:textColor="@color/texto_dia"
+    android:textSize="14sp"
+    android:textStyle="bold" />

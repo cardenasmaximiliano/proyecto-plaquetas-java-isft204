@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ESTILOS (el "CSS" de la app):
+  - Tema general y colores de los componentes: Theme.HemoGestion
+  - Tipografías (tamaño, peso, color): los estilos TextAppearance.HemoGestion.*
+  - Botones y campos: Widget.HemoGestion.*
+  Para cambiar una tipografía, editar su bloque <style>. Para cambiar un color, editar colors.xml.
+-->
+<resources>
+
+    <style name="Theme.HemoGestion" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/hemo_primario</item>
+        <item name="colorOnPrimary">@color/hemo_texto_sobre_primario</item>
+        <item name="colorPrimaryContainer">@color/hemo_primario_suave</item>
+        <item name="colorSecondary">@color/hemo_primario</item>
+        <item name="colorSurface">@color/hemo_superficie</item>
+        <item name="colorOnSurface">@color/hemo_texto</item>
+        <item name="colorError">@color/hemo_error</item>
+        <item name="android:colorBackground">@color/hemo_fondo</item>
+        <item name="android:windowBackground">@color/hemo_fondo</item>
+        <item name="android:statusBarColor">@color/hemo_fondo</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.HemoGestion.Titulo</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.HemoGestion.Subtitulo</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.HemoGestion.Cuerpo</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.HemoGestion.Secundario</item>
+        <item name="materialButtonStyle">@style/Widget.HemoGestion.Button</item>
+        <item name="textInputStyle">@style/Widget.HemoGestion.TextInput</item>
+    </style>
+
+    <!-- TIPOGRAFÍAS -->
+    <style name="TextAppearance.HemoGestion.Titulo" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/hemo_primario_oscuro</item>
+    </style>
+
+    <style name="TextAppearance.HemoGestion.Subtitulo" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/hemo_texto</item>
+    </style>
+
+    <style name="TextAppearance.HemoGestion.Cuerpo" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hemo_texto</item>
+    </style>
+
+    <style name="TextAppearance.HemoGestion.Secundario" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hemo_texto_secundario</item>
+    </style>
+
+    <!-- COMPONENTES -->
+    <style name="Widget.HemoGestion.Button" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/alto_boton</item>
+        <item name="cornerRadius">@dimen/radio_boton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.HemoGestion.Button.Secundario" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/alto_boton</item>
+        <item name="cornerRadius">@dimen/radio_boton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Tarjeta tocable de la pantalla de inicio -->
+    <!-- Tarjeta de módulo del inicio (grilla de dos columnas) -->
+    <style name="Widget.HemoGestion.Tile" parent="android:Widget">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_tarjeta</item>
+        <item name="android:padding">@dimen/espacio_grande</item>
+        <item name="android:minHeight">120dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Ícono de la tarjeta: color de marca sobre fondo verde suave -->
+    <style name="Widget.HemoGestion.TileIcono" parent="android:Widget">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginBottom">@dimen/espacio_medio</item>
+        <item name="android:background">@drawable/bg_chip_exito</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:tint">@color/hemo_primario</item>
+    </style>
+
+    <style name="Widget.HemoGestion.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radio_boton</item>
+    </style>
+
+</resources>

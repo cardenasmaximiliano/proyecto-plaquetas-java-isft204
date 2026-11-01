@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Opciones de los desplegables del formulario. El orden tiene que coincidir con los códigos
+  que usa DonanteFormActivity (SEXO_CODIGOS, GRUPO_CODIGOS, FACTOR_CODIGOS).
+-->
+<resources>
+    <string-array name="sexo_nombres">
+        <item>Femenino</item>
+        <item>Masculino</item>
+    </string-array>
+    <string-array name="grupo_nombres">
+        <item>Grupo sanguíneo sin especificar</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="factor_nombres">
+        <item>Factor Rh sin especificar</item>
+        <item>Positivo (+)</item>
+        <item>Negativo (-)</item>
+    </string-array>
+    <string-array name="grupo_filtro">
+        <item>Todos los grupos</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="factor_filtro">
+        <item>Todos los Rh</item>
+        <item>Positivo (+)</item>
+        <item>Negativo (-)</item>
+    </string-array>
+    <!-- El orden tiene que coincidir con RESULTADOS en DonacionFormActivity -->
+    <string-array name="resultado_nombres">
+        <item>Pendiente</item>
+        <item>Apto</item>
+        <item>Diferido temporal</item>
+        <item>Diferido permanente</item>
+    </string-array>
+    <!-- Mes primero: es la agrupación por defecto de las estadísticas -->
+    <string-array name="agrupacion_nombres">
+        <item>Mes</item>
+        <item>Semana</item>
+    </string-array>
+    <!-- El orden tiene que coincidir con PRECISIONES en DonanteDetalleActivity -->
+    <string-array name="precision_nombres">
+        <item>Día exacto</item>
+        <item>Solo el mes</item>
+        <item>Solo el año</item>
+    </string-array>
+</resources>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inicio: saludo, buscador y grilla de módulos (estilo de la referencia de categorías). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margen_pantalla">
+
+            <!-- Marca y rol -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_grande"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_chip_exito"
+                    android:contentDescription="@null"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_logo_hemo" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_medio"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+                <TextView
+                    android:id="@+id/textoRol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceBodyMedium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textoSaludo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadlineMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_grande"
+                android:text="@string/inicio_subtitulo"
+                android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+            <!-- Buscador: lleva a la lista de donantes, donde se busca por DNI o nombre -->
+            <LinearLayout
+                android:id="@+id/campoBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_grande"
+                android:background="@drawable/bg_buscador"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/espacio_grande"
+                android:paddingEnd="@dimen/espacio_grande"
+                android:minHeight="52dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inicio_buscar"
+                    android:textAppearance="?attr/textAppearanceBodyMedium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_medio"
+                android:text="@string/inicio_modulos"
+                android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+            <!-- Grilla: cada módulo es una tarjeta tocable con su ícono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_medio"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/moduloDonantes"
+                    style="@style/Widget.HemoGestion.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/espacio_medio"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/Widget.HemoGestion.TileIcono"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_modulo_donantes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/modulo_donantes"
+                        android:textAppearance="?attr/textAppearanceTitleMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/moduloAgenda"
+                    style="@style/Widget.HemoGestion.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/Widget.HemoGestion.TileIcono"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_nav_agenda" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/modulo_agenda"
+                        android:textAppearance="?attr/textAppearanceTitleMedium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/espacio_medio"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/moduloRestricciones"
+                    style="@style/Widget.HemoGestion.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/espacio_medio"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/Widget.HemoGestion.TileIcono"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_modulo_restricciones" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/modulo_restricciones"
+                        android:textAppearance="?attr/textAppearanceTitleMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/moduloBusqueda"
+                    style="@style/Widget.HemoGestion.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/Widget.HemoGestion.TileIcono"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_nav_busqueda" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/modulo_busqueda"
+                        android:textAppearance="?attr/textAppearanceTitleMedium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moduloEstadisticas"
+                style="@style/Widget.HemoGestion.Tile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/Widget.HemoGestion.TileIcono"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginEnd="@dimen/espacio_medio"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_nav_estadisticas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modulo_estadisticas"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+            </LinearLayout>
+
+            <!-- Alta de usuarios: solo SuperAdmin y Director (se muestra desde InicioActivity según el rol) -->
+            <LinearLayout
+                android:id="@+id/moduloUsuarios"
+                style="@style/Widget.HemoGestion.Tile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/Widget.HemoGestion.TileIcono"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginEnd="@dimen/espacio_medio"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_modulo_usuarios" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modulo_usuarios"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonSalir"
+                style="@style/Widget.HemoGestion.Button.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_grande"
+                android:text="@string/salir" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_barra_inferior" />
+</LinearLayout>

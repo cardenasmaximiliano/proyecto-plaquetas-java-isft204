@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Día de la tira de la agenda: el elegido va relleno con el color de la marca. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/hemo_primario" />
+            <corners android:radius="@dimen/radio_boton" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/hemo_superficie" />
+            <stroke android:width="1dp" android:color="@color/hemo_borde" />
+            <corners android:radius="@dimen/radio_boton" />
+        </shape>
+    </item>
+</selector>

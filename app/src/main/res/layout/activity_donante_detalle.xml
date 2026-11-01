@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margen_pantalla">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonVolver"
+            style="@style/Widget.HemoGestion.Button.Secundario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_medio"
+            android:text="@string/volver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_medio"
+            android:text="@string/detalle_titulo"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_chico"
+            android:text="@string/detalle_editar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonRegistrarDonacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_chico"
+            android:text="@string/accion_registrar_donacion" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonAgendarTurno"
+            style="@style/Widget.HemoGestion.Button.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_chico"
+            android:text="@string/detalle_agendar_turno" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonRegistrarRestriccion"
+            style="@style/Widget.HemoGestion.Button.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_chico"
+            android:text="@string/detalle_registrar_restriccion" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonLevantarEspera"
+            style="@style/Widget.HemoGestion.Button.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_chico"
+            android:text="@string/detalle_levantar_espera" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonHistorialExterno"
+            style="@style/Widget.HemoGestion.Button.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_grande"
+            android:text="@string/detalle_cargar_historial" />
+
+        <!-- Ficha del donante -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_grande"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical"
+            android:padding="@dimen/espacio_grande">
+
+            <TextView
+                android:id="@+id/textoFicha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.15"
+                android:textAppearance="?attr/textAppearanceBodyMedium" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_medio"
+            android:text="@string/detalle_informe_titulo"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <LinearLayout
+            android:id="@+id/bloqueInforme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_grande"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical"
+            android:padding="@dimen/espacio_medio" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_medio"
+            android:text="@string/detalle_restricciones"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <LinearLayout
+            android:id="@+id/listaRestricciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_grande"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical"
+            android:padding="@dimen/espacio_medio" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_medio"
+            android:text="@string/detalle_historial"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <LinearLayout
+            android:id="@+id/listaDonaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_grande"
+            android:orientation="vertical" />
+    </LinearLayout>
+</ScrollView>

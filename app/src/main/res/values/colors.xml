@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PALETA DE LA APP. Cambiar acá los colores de toda la aplicación.
+  Cada nombre se usa en themes.xml y en los layouts (@color/hemo_...).
+-->
+<resources>
+    <!-- Marca: el verde de los diseños de referencia (botones, íconos, barra activa) -->
+    <color name="hemo_primario">#3DBB6E</color>
+    <color name="hemo_primario_oscuro">#23854D</color>
+    <color name="hemo_primario_suave">#E6F6EC</color>
+
+    <!-- Degradado de la pantalla de ingreso -->
+    <color name="hemo_gradiente_inicio">#5ED68E</color>
+    <color name="hemo_gradiente_fin">#2B9E5C</color>
+
+    <!-- Fondos y superficies -->
+    <color name="hemo_fondo">#FFFFFF</color>
+    <color name="hemo_superficie">#FFFFFF</color>
+    <color name="hemo_borde">#D3EBDC</color>
+
+    <!-- Texto -->
+    <color name="hemo_texto">#1B2A21</color>
+    <color name="hemo_texto_secundario">#6A7C71</color>
+    <color name="hemo_texto_sobre_primario">#FFFFFF</color>
+
+    <!-- Estados -->
+    <color name="hemo_exito">#2E7D5B</color>
+    <color name="hemo_advertencia">#B7791F</color>
+    <color name="hemo_error">#C62828</color>
+    <color name="hemo_exito_suave">#E3F2EA</color>
+    <color name="hemo_advertencia_suave">#F7EBD3</color>
+    <color name="hemo_error_suave">#FBE4E4</color>
+    <color name="hemo_neutro_suave">#EEF3F0</color>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo de la pantalla de ingreso: degradado verde. Cambiar los colores en colors.xml (hemo_gradiente_*). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="@color/hemo_gradiente_inicio"
+        android:endColor="@color/hemo_gradiente_fin" />
+</shape>

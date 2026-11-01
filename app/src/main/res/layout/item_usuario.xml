@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/espacio_medio"
+    android:background="@drawable/bg_tarjeta"
+    android:orientation="vertical"
+    android:padding="@dimen/espacio_grande">
+
+    <TextView
+        android:id="@+id/textoNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <TextView
+        android:id="@+id/textoDetalleUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_chico"
+        android:layout_marginBottom="@dimen/espacio_medio"
+        android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonClaveUsuario"
+        style="@style/Widget.HemoGestion.Button.Secundario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/espacio_chico"
+        android:text="@string/usuarios_clave" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonEstadoUsuario"
+        style="@style/Widget.HemoGestion.Button.Secundario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/usuarios_desactivar" />
+</LinearLayout>

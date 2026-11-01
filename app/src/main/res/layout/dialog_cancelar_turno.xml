@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margen_pantalla">
+
+    <TextView
+        android:id="@+id/textoTurno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/espacio_medio"
+        android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelar_por_que"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <RadioGroup
+        android:id="@+id/grupoMotivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_chico">
+
+        <RadioButton
+            android:id="@+id/motivoNoAsistio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/motivo_no_asistio" />
+
+        <RadioButton
+            android:id="@+id/motivoCancelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/motivo_cancelo" />
+
+        <RadioButton
+            android:id="@+id/motivoOtro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/motivo_otro" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_chico"
+        android:hint="@string/cancelar_detalle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
